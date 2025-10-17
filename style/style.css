@@ -1,0 +1,563 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(/fonts/Poppins-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #1b1a1a;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* начало шапки */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  height: 90px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.header_menu {
+  display: flex;
+  column-gap: 32px;
+}
+
+.logo {
+  margin-left: 152px;
+}
+
+.template_header {
+  margin-right: 152px;
+  background-color: #1b1a1a;
+  color: #ffffff;
+  padding: 11px 20px;
+  border-radius: 15px;
+  border: none;
+}
+
+/* конец шапки */
+
+/* block the home of... */
+/* начало блока 1*/
+.title_thehome {
+  background-color: #ece7e4;
+  height: 720px;
+  position: relative;
+}
+
+.image_thehome img {
+  display: flex;
+  width: 720px;
+  float: right;
+}
+
+.title_block_thehome {
+  font-size: 64px;
+  line-height: 70px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.block1 {
+  /*padding: 100px 177px 923px 331px;*/
+  position: absolute;
+  max-width: 650px;
+  bottom: 150px;
+  left: 170px;
+}
+
+.partners {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* кнопка read more */
+
+.link_readmore {
+  margin-top: 30px;
+  background-color: #ece7e4;
+  border: 1px solid #1b1a1a;
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 5px 10px;
+
+  cursor: pointer;
+}
+/* конец блока 1*/
+
+/* начало блока 2*/
+
+.section_ourfirm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 770px; /* чтобы секция была по центру экрана */
+}
+
+.section_ourfirm > div {
+  display: flex;
+  flex-direction: column; /* чтобы всё шло сверху вниз */
+  align-items: flex-start; /* чтобы контент был выровнен по левому краю */
+  gap: 10px; /* расстояние между текстом и картинкой */
+}
+
+.text-block {
+  display: flex;
+  gap: 130px;
+  align-items: flex-start;
+  max-width: 770px;
+  font-size: 16px;
+}
+
+.block2_title {
+  font-size: 32px;
+  white-space: nowrap;
+  color: #403e3b;
+}
+
+.block2_text {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.firm_image {
+  width: 120px;
+  height: 120px;
+  margin-left: 260px;
+}
+
+.block2_author {
+  display: flex;
+  align-items: center;
+}
+
+.block2_author > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.block2_author > div > h3 {
+  margin-left: 30px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #1b1a1a;
+  margin-bottom: 0px;
+}
+
+.block2_author > div > h4 {
+  margin-left: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 0px;
+  color: #645c55;
+}
+/* конец второго блока */
+
+/* начало третьего блока */
+
+.section_reedinghouse {
+  position: relative;
+  background-image: url(/images/block.jpg);
+  background-size: cover;
+  height: 600px;
+}
+
+.block3 {
+  position: absolute;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(30px);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 15px 45px;
+  border-radius: 32px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+
+  width: 500px;
+  max-width: 23%;
+
+  top: 35%;
+  left: 65%;
+}
+
+.block3 > h1 {
+  margin-bottom: 0;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.block3 > h2 {
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: 400;
+}
+/* конец третьего блока */
+
+/* начало четвертого блока */
+.section_ourprocess {
+  background-color: #ffffff;
+  height: 580px;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  padding: 100px 180px;
+}
+
+.block4 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+.block4_text > h1 {
+  color: #645c55;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.block4_text > h2 {
+  color: #1b1a1a;
+  font-size: 32px;
+  margin-top: 13px;
+}
+
+.block4_item {
+  display: flex;
+  justify-content: space-between;
+
+  width: 1000px;
+
+  margin-top: 40px;
+}
+
+.block4_item1 {
+  width: 300px;
+}
+
+.block4_item1 > h3 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+
+  margin-bottom: 10px;
+
+  color: #403e3b;
+}
+
+.block4_item1 > p {
+  font-size: 15px;
+  font-weight: 400;
+
+  color: #645c55;
+}
+
+.block4_item2 {
+  width: 300px;
+}
+
+.block4_item2 > h3 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #403e3b;
+}
+
+.block4_item2 > p {
+  font-size: 15px;
+  font-weight: 400;
+
+  color: #645c55;
+}
+
+.block4_item3 {
+  width: 300px;
+}
+
+.block4_item3 > h3 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #403e3b;
+}
+
+.block4_item3 > p {
+  font-size: 15px;
+  font-weight: 400;
+
+  color: #645c55;
+}
+/* конец 4 блока */
+
+/* начало 5 блока */
+
+.block5 {
+  position: relative;
+  display: flex;
+  background-image: url(/images/Frame.jpg);
+  width: 100%;
+  height: 60vh;
+  object-fit: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.block5 > div {
+  position: absolute;
+  color: #645c55;
+  right: 8%;
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(30px);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px 35px;
+  border-radius: 32px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+}
+
+.block5_text > h1 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.block5_text > p {
+  margin: 0;
+  max-width: 60%;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* конец 5 блока */
+
+/* начало 6 блока */
+
+.block6 {
+  background-color: #403e3b;
+
+  width: 100%;
+  min-height: 41vh;
+}
+
+.block6 > div {
+  position: relative;
+}
+
+.block6_content {
+  position: absolute;
+  display: flex;
+  justify-self: center;
+  flex-direction: row;
+  align-items: center;
+
+  height: 41vh;
+}
+
+.block6_text {
+  color: #ece7e4;
+}
+
+.block6_text > h1 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.block6_text > h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 32px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.block6_text > p {
+  margin-top: 14px;
+  max-width: 600px;
+}
+
+.block6_images {
+  max-width: 310px;
+}
+
+.block6_images > img {
+  margin: 20px 10px;
+}
+
+/* конец 6 блока */
+
+/* начало 7 блока */
+
+.team-section {
+  width: 100%;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.team-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  max-width: 1200px;
+  gap: 190px;
+}
+
+.team-text {
+  flex: 1;
+  max-width: 450px;
+}
+
+.team-text h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.team-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.team-link {
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s;
+}
+
+.team-link:hover {
+  border-bottom: 1px solid #000;
+}
+
+.team-grid {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 30px;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.team-member img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.team-member h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.team-member p {
+  margin: 0px 0 0;
+  font-size: 14px;
+  color: #777;
+}
+
+/* подвал */
+footer {
+  background-color: #F7F7F7;
+
+  width: 100%;
+  min-height: 20vh;
+  color: #645C55;
+}
+
+.footer > div {
+  position: relative;
+}
+
+.footer_content {
+  position: absolute;
+
+  width: 70%;
+  height: 20vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  left: 15%;
+}
+
+.text img {
+  margin-bottom: 20px;
+}
+
+.text > p {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.weblinks img {
+  margin: 0px 10px;
+}
